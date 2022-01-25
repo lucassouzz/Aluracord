@@ -1,0 +1,3 @@
+yarn add next react react-dom [Para iniciar o projeto com nextjs]
+
+yarn dev [rodar projeto]
