@@ -1,8 +1,6 @@
 import { Box, Button, Text, TextField, Image } from '@skynexui/components'
 import React from 'react';
 
-import axios from 'axios'
-
 import { useRouter } from 'next/router'
 
 import appConfig from '../config.json'
@@ -22,26 +20,11 @@ function Title(props) {
     );
 }
 
-
-// //Componente React
-// function HomePage() {
-//     //Page JSX
-//     return (
-//         <div>
-//             <GlobalStyle />
-//             <Title Tag="h2">Boas vindas de volta</Title>
-//             <h2>Discord - Alura Matrix</h2>
-//         </div>
-//     )
-//   }
-  
-//   export default HomePage
-
 export default function PaginaInicial() {
-    // const username = 'lucassouzz';
+  
     const [username, setUsername] = React.useState('')
     const roteamento = useRouter()
-    const resp = 'https://api.github.com/users/lucassouzz'
+  
     return (
       <>
         <Box
