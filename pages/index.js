@@ -60,7 +60,7 @@ export default function PaginaInicial() {
                   //Edefinindo que o comportamento do submit nao recarregara a página
                   eventSubmit.preventDefault()
                   console.log("Formulário submetido")
-                  roteamento.push('/chat')
+                  roteamento.push(`/chat?username=${username}`)
               }}
               styleSheet={{
                 display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
